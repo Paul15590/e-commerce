@@ -27,10 +27,11 @@ header{
      a{
       color: #fff;
       text-decoration: none;
+      font-size: 13px;
   
     }
     h5{
-      font-size: 15px;
+      font-size: 5px;
 
     }
     input[type="search"]{
@@ -60,6 +61,7 @@ header{
     }
     ul li {
       display: inline-block;
+      font-size: 13px;
     }
     ul li a{
       text-decoration: none;
@@ -88,9 +90,10 @@ div.second-header{
       div{
         background-color: #93d8d3;
         width: 16%;
-        padding: 15px 10px;
+        padding: 10px 0px;
         border-radius: 5px;
         text-align: center;
+        cursor: pointer;
       }
     }
 
@@ -119,11 +122,14 @@ div.second-header{
       box-shadow: 0px 0px 5px 5px hsl(0, 10%, 85%);
     }
         p{
-          font-size: 20px;
+          font-size: 13px;
+        }
+        h1{
+          font-size: medium;
         }
     img{
-      width: 250px;
-      height: 350px;
+      width: 240px;
+      height: 260px;
     }
     }
 
@@ -132,7 +138,10 @@ div.second-header{
 
     section.deal-items{
       margin:  10px ;
-      
+      img{
+        width: 200px;
+        height: 200px;
+      }
       > div:first-child{
         background-color: #28918A;
         padding: 15px;
@@ -154,12 +163,15 @@ div.second-header{
     section.deal-items > div:last-child{
       flex-wrap: wrap;
     }
+
         section.deal-items div.items{
-        width: 380px;
-        height: 280px;
+        width: 33%;
+        height: 260px;
         margin: 10px 0px;
+        padding: 0px 10px;
         box-shadow: 0px 0px 2px 2px hsl(0, 10%, 85%);
 
+    
         #deal-items{
         display: flex;
         justify-content: space-between;
@@ -168,17 +180,23 @@ div.second-header{
         p,button{
           margin: 0px 5px;
         }
+        h3{
+          font-size: 15px;
+        }
         button{
           background-color: #28918A;
           border: none;
           border-radius: 10px;
+          font-size: 12px;
         }
         p{
           text-decoration: line-through;
+          font-size: 13px;
         }
       }
       #save{
         color:#3c817c;
+        font-size: 13px;
       }
       }
       section.deal-items div.items:hover{
@@ -194,11 +212,13 @@ div.second-header{
           margin: 20px 0px;
         }
         img{
-          width: 300px;
-          height: 250px;
+          width: 100%;
+          height: 230px;
         }
         p:last-child{
           color: #28918A;
+          font-size: 13px;
+          cursor: pointer;
         }
       }
      }
@@ -207,6 +227,9 @@ div.second-header{
       padding: 15px;
       color: rgb(91, 85, 85);
       font-family:Verdana, Geneva, Tahoma, sans-serif ;
+      h1{
+        margin-bottom: 10px;
+      }
      }
     
      div.form{
@@ -311,12 +334,16 @@ div.second-header{
         }
         background-color:#2f3433;
         padding: 20px;
+        h3{
+          font-size: 15px;
+        }
         button,input[type="email"]{
           border: none;
           padding: 15px 10px;
         }
         button{
           background-color: #28918A;
+          color: #fff;
         }
        
       }
@@ -438,11 +465,15 @@ section.categories{
   }
 
   article{
-    // width: 23%;
+    width: 33%;
     max-width: 350px;
     margin: 10px;
     padding: 10px;
     background-color: #fff;
+
+    >img{
+      height: 250px;
+    }
 
     p,h3,button,img,span{
       margin: 10px 0px;
@@ -618,9 +649,11 @@ section.categories{
   
   section:last-child{
     flex-direction: column;
+    align-items: center;
     div{
       width: 100%;
       flex-wrap: wrap;
+      align-items: center;
     }
   }
 } 

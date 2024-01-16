@@ -13,8 +13,8 @@ import iconBrowse from '../component/asset/browse.svg';
 import iconComputer from '../component/asset/computer.svg';
 import iconPhone from '../component/asset/phone (1).svg';
 import iconDeal from '../component/asset/deal.svg';
+import { Link } from "react-router-dom";
 import { useState } from "react";
-
 
 const Slide = ()=> {
    
@@ -43,7 +43,7 @@ const Slide = ()=> {
                         <div className='flexi'>
                             <div className='flexi'>
                             <img src={iconClose} alt="" onClick={closeNav} />
-                            <h3><a href="/"> PAUL</a></h3>
+                            <h3> <Link to="/"> PAUL</Link> </h3>
                             </div>
                             <div>
                                 <img src={iconHome} alt="" />
@@ -60,26 +60,26 @@ const Slide = ()=> {
             <div className='flexi second'>
                     <div>
                         <img src={iconLocation} alt="" />
-                        <p>Track Order</p>
+                        <p> <Link to="/"> Track Order</Link></p>
                     </div>
                     <div>
                         <img src={iconStar} alt="" />
-                        <p>Pending Order</p>
+                        <p><Link>Pending Order </Link></p>
                     </div>
                     <div>
                         <img src={iconSell} alt="" />
-                        <p>Sell on Paul</p>
+                        <p><Link>Sell on Paul</Link></p>
                     </div>
                     <div>
                         <img src={iconHome} alt="" />
-                        <p>Physical Stores</p>
+                        <p><Link>Physical Stores</Link></p>
                     </div>
             </div>
 
             <div className='third'>
                 <h3> Categories</h3>
                 <div  className='flexi'> 
-                    <p> Computers and Acessories</p>
+                    <p> <a href="/categories">Computers and Acessories</a></p>
                     <img src={iconRight} alt="" />
                 </div>
                 <div className='flexi'> 
@@ -95,7 +95,7 @@ const Slide = ()=> {
                     <img src={iconRight} alt="" />
                 </div>
                 <div className='flexi'> 
-                    <p>Home and Kitchen </p>
+                    <p>Home and Kitchen</p>
                     <img src={iconRight} alt="" />
                 </div>
                 <div className='flexi'> 

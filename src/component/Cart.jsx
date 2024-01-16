@@ -1,37 +1,31 @@
-import Slide from "./Slide";
-import Header from "./Header";
-import Footer from "./Footer";
 import cartItems from '../component/asset/cart-items.png';
 import iconMinus from '../component/asset/minus.svg';
 import iconAdd from '../component/asset/add.svg';
 import iconDelete from '../component/asset/delete.svg';
 import { useState } from "react";
 
-const Cart=()=> {
+const Cart=(props1)=> {
 
-    const [counter,setCounter] = useState(0);
+    const [cartCounter,setCartCounter] = useState(0);
     const [delet,setDelet]=useState(false);
 
     const deleteCart=()=> {
         setDelet(true);
-        console.log('tehjt');
     }
 
     const increaseCounter=() => {
-            setCounter(counter + 1);
+        setCartCounter(cartCounter + 1);
         };
 
         const decreaseCounter=() => {
-            if (counter>0){
-                setCounter(counter - 1)
+            if (cartCounter>0){
+                setCartCounter(cartCounter - 1)
             }
             
         };
 
     return (
         <>
-        <Slide />
-        <Header/>
             <section className="cart">
               
               <section className="cartflex">
@@ -65,7 +59,7 @@ const Cart=()=> {
                          <div className="flex" >
                              <img src={iconMinus} alt="" width={25}
                              onClick={decreaseCounter}/>
-                             <p id="action">{counter}</p>
+                             <p id="action">{cartCounter}</p>
                              <img src={iconAdd} alt="" width={25}
                              onClick={increaseCounter}/>
                          </div>
@@ -80,7 +74,7 @@ const Cart=()=> {
                     <div>
                         <div className="cartflex"> 
                             <p>CART SUMMARY</p>
-                            <p>2 Items</p>
+                            <p>{props1.counter +cartCounter} Items</p>
                         </div>
                         <div className="cartflex">
                             <p> Sub Total</p>
@@ -100,7 +94,6 @@ const Cart=()=> {
 
               </div>
             </section>
-        <Footer/>
         </>
     )
 }

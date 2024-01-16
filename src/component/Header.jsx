@@ -1,7 +1,6 @@
 import cart from '../component/asset/cart.svg';
 import { Link } from 'react-router-dom';
- const  Header = (props) => {
-    const {cartCounter}=props;
+ const  Header = (props1) => {
     return (
       <>
         <header >
@@ -18,7 +17,7 @@ import { Link } from 'react-router-dom';
                         <Link to="/cart"> My cart</Link>
                     </div>
                     <div className='cart'>
-                        <p>:{cartCounter}</p>
+                        <p>:{props1.counter  }</p>
                     </div>
                 </div>
             </section>

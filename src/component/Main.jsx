@@ -2,16 +2,11 @@ import About from "./About";
 import Firstsection from "./FisrtSection"
 import SecondSection from "./SecondSection";
 import ThirdSection from "./ThirdSection";
-import Header from './Header';
-import Footer from './Footer';
 import PromoBoard from "./PromoBoard";
-import Slide from "./Slide";
-const Main = () => {
-    
+const Main = (props) => {
+  
     return (
         <> 
-        <Slide />
-        <Header />
         <PromoBoard/>
          <Firstsection/>
          <SecondSection/>
@@ -20,7 +15,6 @@ const Main = () => {
         <ThirdSection/>
         <About/>
 
-        <Footer/>
         </>
     )
 }
